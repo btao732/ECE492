@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Jan 31 14:08:59 2023
+# Process ID: 17588
+# Current directory: C:/Users/Moose/Documents/School/ECE492/Platform/Platform.runs/synth_1
+# Command line: vivado.exe -log system_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_wrapper.tcl
+# Log file: C:/Users/Moose/Documents/School/ECE492/Platform/Platform.runs/synth_1/system_wrapper.vds
+# Journal file: C:/Users/Moose/Documents/School/ECE492/Platform/Platform.runs/synth_1\vivado.jou
+# Running On: DESKTOP-4VIHOFO, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 16, Host memory: 16387 MB
+#-----------------------------------------------------------
+source system_wrapper.tcl -notrace

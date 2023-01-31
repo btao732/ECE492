@@ -14,15 +14,15 @@ int main() {
     signal(SIGINT, signal_callback_handler);
 
     HANDLE h_serial;
-    h_serial = CreateFile(_T("COM4"), GENERIC_READ | GENERIC_WRITE,
+    h_serial = CreateFile(_T("COM6"), GENERIC_READ | GENERIC_WRITE,
                             0, 0, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, 0);
     if (h_serial == INVALID_HANDLE_VALUE) {
         if (GetLastError() == ERROR_FILE_NOT_FOUND) {
-            std::cout << "COM4 Port Not Found" << std::endl;
+            std::cout << "COM6 Port Not Found" << std::endl;
             return EXIT_FAILURE;
         }
     }
-    std::cout << "Connected on COM4" << std::endl;
+    std::cout << "Connected on COM6" << std::endl;
     DCB dcbSerialParam = {0};
     dcbSerialParam.DCBlength = sizeof(dcbSerialParam);
 
