@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "xilinx_vip" -L "secureip" -L "xpm" --snapshot "PISO_shift_register_tb_behav" "xil_defaultlib.PISO_shift_register_tb" -log "elaborate.log" 
