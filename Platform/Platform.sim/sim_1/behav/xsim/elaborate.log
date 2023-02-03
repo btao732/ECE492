@@ -1,8 +1,9 @@
 Vivado Simulator v2022.1
 Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L secureip -L xpm --snapshot PISO_shift_register_tb_behav xil_defaultlib.PISO_shift_register_tb -log elaborate.log 
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_12 -L processing_system7_vip_v1_0_14 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot PISO_controller_tb_behav xil_defaultlib.PISO_controller_tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
+Pass Through NonSizing Optimizer
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -10,6 +11,11 @@ Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.clk_divider [clk_divider_default]
 Compiling architecture behavioral of entity xil_defaultlib.PISO_shift_register [piso_shift_register_default]
-Compiling architecture behavioral of entity xil_defaultlib.piso_shift_register_tb
-Built simulation snapshot PISO_shift_register_tb_behav
+Compiling architecture behavioral of entity xil_defaultlib.PISO_controller [piso_controller_default]
+Compiling architecture behavioral of entity xil_defaultlib.piso_controller_tb
+Built simulation snapshot PISO_controller_tb_behav

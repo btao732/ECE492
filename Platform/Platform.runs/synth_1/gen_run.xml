@@ -1,13 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1675199337" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/system_wrapper.dcp">
-  <File Type="PA-TCL" Name="system_wrapper.tcl"/>
-  <File Type="REPORTS-TCL" Name="system_wrapper_reports.tcl"/>
-  <File Type="RDS-RDS" Name="system_wrapper.vds"/>
-  <File Type="RDS-UTIL" Name="system_wrapper_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="system_wrapper_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="system_wrapper.dcp"/>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1675465638" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/system_wrapper.dcp">
+  <File Type="PA-TCL" Name="PISO_controller.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="PISO_controller_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="PISO_controller_reports.tcl"/>
+  <File Type="RDS-RDS" Name="PISO_controller.vds"/>
+  <File Type="RDS-UTIL" Name="PISO_controller_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="PISO_controller_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="PISO_controller.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="PISO_controller_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="PISO_controller_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/PISO_shift_register.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab 3/clk_divider.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Semester 9/ECE 410/Labs/Lab 3/clk_divider.vhd"/>
+        <Attr Name="ImportTime" Val="1668460598"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PISO_controller.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/bd/system/system.bd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -23,12 +46,19 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="system_wrapper"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
+      <Option Name="TopModule" Val="PISO_controller"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Lab 3/Zybo-Z7-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Semester 9/ECE 410/Labs/Lab 3/Zybo-Z7-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1668460757"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
