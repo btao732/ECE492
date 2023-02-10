@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-02-10T02:24:21.790Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="xB1cTQSDx19MfoYbkr-N" version="20.8.18" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-02-10T02:27:58.800Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="Z7a5Ugo1t76_z19Lp7W3" version="20.8.18" type="github" pages="2">
   <diagram name="use case" id="0783ab3e-0a74-02c8-0abd-f7b4e66b4bec">
     <mxGraphModel dx="1050" dy="491" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
@@ -89,7 +89,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="l-wFT_b2IggKGpKoUos0" name="system architecture">
-    <mxGraphModel dx="1750" dy="915" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
+    <mxGraphModel dx="2100" dy="1098" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -232,7 +232,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="TX1y-9oooYc3sYSYYFnl-12" value="MATLAB &#xa;API" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="460" y="581.25" width="100" height="50" as="geometry" />
+          <mxGeometry x="340" y="630" width="100" height="50" as="geometry" />
         </mxCell>
         <mxCell id="TX1y-9oooYc3sYSYYFnl-13" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=95;entryDy=130;entryPerimeter=0;" edge="1" parent="1" source="TX1y-9oooYc3sYSYYFnl-12" target="NEbDM9hdOid-LWQb8EAm-1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -241,12 +241,21 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="TX1y-9oooYc3sYSYYFnl-14" value="Generating &#xa;binary file" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="320" y="581.25" width="100" height="50" as="geometry" />
+          <mxGeometry x="290" y="542.5" width="100" height="50" as="geometry" />
         </mxCell>
         <mxCell id="TX1y-9oooYc3sYSYYFnl-15" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="TX1y-9oooYc3sYSYYFnl-14" target="NEbDM9hdOid-LWQb8EAm-1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="370" y="560" as="sourcePoint" />
             <mxPoint x="420" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TX1y-9oooYc3sYSYYFnl-16" value="Serial &#xa;Monitor" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="450" y="581.25" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="TX1y-9oooYc3sYSYYFnl-17" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" target="NEbDM9hdOid-LWQb8EAm-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="510" y="581.25" as="sourcePoint" />
+            <mxPoint x="560" y="531.25" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
