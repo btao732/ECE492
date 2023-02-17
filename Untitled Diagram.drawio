@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-02-17T00:12:54.401Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="pPGLxmoA_eUlQMDo_Ggm" version="20.8.20" type="github">
+<mxfile host="app.diagrams.net" modified="2023-02-17T00:13:21.129Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="bD_DHncryMHPYdqpsx0m" version="20.8.20" type="github">
   <diagram name="Page-1" id="DdXBMfR7fsQA4sm28C2N">
     <mxGraphModel dx="1221" dy="751" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -28,11 +28,11 @@
             <mxPoint x="560" y="310" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="TAGmmweaD-kp1vJ4mzty-17" value="" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" vertex="1" parent="1">
+        <mxCell id="TAGmmweaD-kp1vJ4mzty-17" value="Channel 1 Waveform" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" vertex="1" parent="1">
           <mxGeometry x="270" y="240" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="TAGmmweaD-kp1vJ4mzty-18" value="" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" vertex="1" parent="1">
-          <mxGeometry x="260" y="400" width="120" height="80" as="geometry" />
+        <mxCell id="TAGmmweaD-kp1vJ4mzty-18" value="Channel n Waveform" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="400" width="120" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
