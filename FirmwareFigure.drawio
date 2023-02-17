@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-02-17T05:03:47.703Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="cNfnqoavD_X_W0hK0ZTX" version="20.8.20" type="github">
+<mxfile host="app.diagrams.net" modified="2023-02-17T05:06:25.387Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="GFhNAQuE_TjF7LNLwNoi" version="20.8.20" type="github">
   <diagram name="Page-1" id="gKlPSkffg3R20uKBkTEJ">
-    <mxGraphModel dx="2071" dy="694" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2071" dy="751" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -14,19 +14,19 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="eCDFyifeUGnLUwcjGh3W-1" value="USB-to-UART bridge" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" vertex="1" parent="1">
-          <mxGeometry x="90" y="270" width="120" height="80" as="geometry" />
+          <mxGeometry x="60" y="270" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="eCDFyifeUGnLUwcjGh3W-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eCDFyifeUGnLUwcjGh3W-2" target="eCDFyifeUGnLUwcjGh3W-3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="eCDFyifeUGnLUwcjGh3W-2" value="SoC" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" vertex="1" parent="1">
-          <mxGeometry x="230" y="270" width="120" height="80" as="geometry" />
+          <mxGeometry x="210" y="270" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="eCDFyifeUGnLUwcjGh3W-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eCDFyifeUGnLUwcjGh3W-3" target="eCDFyifeUGnLUwcjGh3W-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="eCDFyifeUGnLUwcjGh3W-3" value="DMA Module" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" vertex="1" parent="1">
-          <mxGeometry x="370" y="270" width="120" height="80" as="geometry" />
+          <mxGeometry x="360" y="270" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="eCDFyifeUGnLUwcjGh3W-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eCDFyifeUGnLUwcjGh3W-4" target="eCDFyifeUGnLUwcjGh3W-6">
           <mxGeometry relative="1" as="geometry" />
@@ -37,8 +37,14 @@
         <mxCell id="eCDFyifeUGnLUwcjGh3W-4" value="Channel Controller" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" vertex="1" parent="1">
           <mxGeometry x="520" y="270" width="120" height="80" as="geometry" />
         </mxCell>
+        <mxCell id="eCDFyifeUGnLUwcjGh3W-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eCDFyifeUGnLUwcjGh3W-5" target="eCDFyifeUGnLUwcjGh3W-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="eCDFyifeUGnLUwcjGh3W-5" value="PISO Shift Register n" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" vertex="1" parent="1">
           <mxGeometry x="680" y="350" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eCDFyifeUGnLUwcjGh3W-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eCDFyifeUGnLUwcjGh3W-6" target="eCDFyifeUGnLUwcjGh3W-28">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="eCDFyifeUGnLUwcjGh3W-6" value="PISO Shift Register 1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" vertex="1" parent="1">
           <mxGeometry x="680" y="190" width="120" height="80" as="geometry" />
@@ -52,14 +58,26 @@
         <mxCell id="eCDFyifeUGnLUwcjGh3W-23" value="&lt;h1&gt;FPGA PL&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="520" y="375" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="eCDFyifeUGnLUwcjGh3W-24" value="&lt;h1&gt;FPGA&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="180" y="440" width="170" height="40" as="geometry" />
+        <mxCell id="eCDFyifeUGnLUwcjGh3W-24" value="&lt;h1&gt;Firmware running on FPGA&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="105" y="440" width="330" height="40" as="geometry" />
         </mxCell>
         <mxCell id="eCDFyifeUGnLUwcjGh3W-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eCDFyifeUGnLUwcjGh3W-26" target="eCDFyifeUGnLUwcjGh3W-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="eCDFyifeUGnLUwcjGh3W-26" value="Host PC" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" vertex="1" parent="1">
           <mxGeometry x="-130" y="270" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eCDFyifeUGnLUwcjGh3W-28" value="Channel 1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="190" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eCDFyifeUGnLUwcjGh3W-29" value="Channel n" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="350" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eCDFyifeUGnLUwcjGh3W-30" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" edge="1" parent="1" source="eCDFyifeUGnLUwcjGh3W-29" target="eCDFyifeUGnLUwcjGh3W-28">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="250" y="680" as="sourcePoint" />
+            <mxPoint x="300" y="630" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
