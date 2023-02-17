@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-02-17T00:14:59.925Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="CrYif8UteHFiDO6PoZZz" version="20.8.20" type="github">
+<mxfile host="app.diagrams.net" modified="2023-02-17T00:15:21.877Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="WzeGfLs3A0Z7XRF1WioD" version="20.8.20" type="github">
   <diagram name="Page-1" id="DdXBMfR7fsQA4sm28C2N">
     <mxGraphModel dx="1221" dy="751" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -34,14 +34,26 @@
             <mxPoint x="560" y="310" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="TAGmmweaD-kp1vJ4mzty-20" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=30;entryPerimeter=0;strokeColor=default;rounded=0;" edge="1" parent="1" source="TAGmmweaD-kp1vJ4mzty-17" target="TAGmmweaD-kp1vJ4mzty-6">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="TAGmmweaD-kp1vJ4mzty-20" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;rounded=0;" edge="1" parent="1" source="TAGmmweaD-kp1vJ4mzty-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="490" y="340" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="440" y="280" />
+              <mxPoint x="440" y="340" />
+              <mxPoint x="490" y="340" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="TAGmmweaD-kp1vJ4mzty-17" value="Channel 1 Waveform" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" vertex="1" parent="1">
           <mxGeometry x="270" y="240" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="TAGmmweaD-kp1vJ4mzty-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;" edge="1" parent="1" source="TAGmmweaD-kp1vJ4mzty-18" target="TAGmmweaD-kp1vJ4mzty-6">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="440" />
+              <mxPoint x="440" y="370" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="TAGmmweaD-kp1vJ4mzty-18" value="Channel n Waveform" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" vertex="1" parent="1">
           <mxGeometry x="270" y="400" width="120" height="80" as="geometry" />
