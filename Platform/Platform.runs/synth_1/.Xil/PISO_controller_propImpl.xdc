@@ -3,3 +3,5 @@ set_property src_info {type:XDC file:1 line:8 export:INPUT save:INPUT read:READ}
 set_property -dict { PACKAGE_PIN K17   IOSTANDARD LVCMOS33 } [get_ports { clk_s }]; #IO_L12P_T1_MRCC_35 Sch=sysclk
 set_property src_info {type:XDC file:1 line:137 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN T14   IOSTANDARD LVCMOS33     } [get_ports { serial }]; #IO_L5P_T0_34 Sch=jd_p[1]
+set_property src_info {type:XDC file:1 line:138 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN T15   IOSTANDARD LVCMOS33     } [get_ports { clk_s_out }]; #IO_L5N_T0_34 Sch=jd_n[1]
