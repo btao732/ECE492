@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date             : Fri Feb  3 16:06:56 2023
+| Date             : Fri Feb 10 00:04:53 2023
 | Host             : DESKTOP-4VIHOFO running 64-bit major release  (build 9200)
 | Command          : report_power -file PISO_controller_power_routed.rpt -pb PISO_controller_power_summary_routed.pb -rpx PISO_controller_power_routed.rpx
 | Design           : PISO_controller
@@ -60,7 +60,7 @@ Table of Contents
 |   Others       |     0.000 |        6 |       --- |             --- |
 |   BUFG         |     0.000 |        1 |        32 |            3.13 |
 | Signals        |    <0.001 |      118 |       --- |             --- |
-| I/O            |    <0.001 |        2 |       100 |            2.00 |
+| I/O            |    <0.001 |        3 |       100 |            3.00 |
 | Static Power   |     0.090 |          |           |                 |
 | Total          |     0.091 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+

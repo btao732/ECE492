@@ -44,7 +44,7 @@ begin
     begin
         if clk_in='1' and clk_in'event then
             count <= count + 1;
-            if(count = 62500000) then
+            if(count = (62500000 / 2)) then -- 1s = 62500000
                 clock_out <= NOT clock_out;
                 count <= 1;
             end if;

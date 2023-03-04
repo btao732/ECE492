@@ -1,7 +1,4 @@
-#include <windows.h>
-#include <tchar.h>
-#include <iostream>
-#include <signal.h>
+#include "SerialMonitor.hpp"
 
 bool running = true;
 
@@ -10,18 +7,18 @@ void signal_callback_handler(int signum) {
     running = false;
 }
 
-int main() {
+SerialMonitor::SerialMonitor() {
     signal(SIGINT, signal_callback_handler);
 
-    HANDLE h_serial;
     h_serial = CreateFile(_T("COM6"), GENERIC_READ | GENERIC_WRITE,
                             0, 0, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, 0);
     if (h_serial == INVALID_HANDLE_VALUE) {
         if (GetLastError() == ERROR_FILE_NOT_FOUND) {
             std::cout << "COM6 Port Not Found" << std::endl;
-            return EXIT_FAILURE;
+            exit(EXIT_FAILURE);
         }
     }
+
     std::cout << "Connected on COM6" << std::endl;
     DCB dcbSerialParam = {0};
     dcbSerialParam.DCBlength = sizeof(dcbSerialParam);
@@ -29,7 +26,7 @@ int main() {
     if (!GetCommState(h_serial, &dcbSerialParam)) {
         std::cout << "GetCommState error" << std::endl;
         CloseHandle(h_serial);  
-        return EXIT_FAILURE;
+        exit(EXIT_FAILURE);
     }
 
     dcbSerialParam.BaudRate = CBR_115200;
@@ -40,7 +37,7 @@ int main() {
     if (!SetCommState(h_serial, &dcbSerialParam)) {
         std::cout << "SetCommState error" << std::endl;
         CloseHandle(h_serial);
-        return EXIT_FAILURE;
+        exit(EXIT_FAILURE);
     }
 
     COMMTIMEOUTS timeout = {0};
@@ -53,21 +50,23 @@ int main() {
     if (!SetCommTimeouts(h_serial, &timeout)) {
         std::cout << "SetCommTimeouts error" << std::endl;
         CloseHandle(h_serial);
-        return EXIT_FAILURE;
+        exit(EXIT_FAILURE);
     }
-    
-    DWORD dwRead;
-    OVERLAPPED osReader = {0};
-    char buffer[100] = {0};
 
     osReader.hEvent = CreateEvent(NULL, TRUE, FALSE, NULL);
 
     if (!osReader.hEvent) {
         std::cout << "CreateEvent error" << std::endl;
         CloseHandle(h_serial);
-        return EXIT_FAILURE;
+        exit(EXIT_FAILURE);
     }
+}
 
+SerialMonitor::~SerialMonitor() {
+    CloseHandle(h_serial);
+}
+
+void SerialMonitor::start() {
     while (running) {
         if (!ReadFile(h_serial, buffer, 100, &dwRead, &osReader)) {
             if (GetLastError() != ERROR_IO_PENDING) {
@@ -78,7 +77,4 @@ int main() {
         }
         memset(buffer, 0, sizeof(buffer));
     }
-
-    CloseHandle(h_serial);
-    return EXIT_SUCCESS;
 }

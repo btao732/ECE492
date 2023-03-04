@@ -33,6 +33,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity PISO_controller is
     Port ( clk_s : in STD_LOGIC;
+           clk_s_out : out std_logic;
            serial : out std_logic);
 end PISO_controller;
 
@@ -58,6 +59,8 @@ signal latch_c : std_logic := '0';
 signal rst_c : std_logic := '0';
 
 begin
+    clk_s_out <= divided_clk;
+    
     clock_divider : clk_divider port map ( clk_in => clk_s, clk_out => divided_clk);
     piso : PISO_shift_register port map ( data_in => data, 
                                           clk => divided_clk, 

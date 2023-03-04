@@ -209,3 +209,389 @@ con
 16:43:47 INFO  : Successfully done setting workspace for the tool. 
 17:19:48 INFO  : Checking for BSP changes to sync application flags for project 'SPARC'...
 17:33:43 INFO  : Checking for BSP changes to sync application flags for project 'SPARC'...
+14:00:48 DEBUG : Logs will be stored at 'C:/Users/Moose/Documents/School/ECE492/Platform/IDE.log'.
+14:00:48 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\Moose\Documents\School\ECE492\Platform\temp_xsdb_launch_script.tcl
+14:00:51 INFO  : Platform repository initialization has completed.
+14:00:51 INFO  : XSCT server has started successfully.
+14:00:51 INFO  : Successfully done setting XSCT server connection channel  
+14:00:51 INFO  : plnx-install-location is set to ''
+14:00:52 INFO  : Registering command handlers for Vitis TCF services
+14:00:54 INFO  : Successfully done setting workspace for the tool. 
+14:00:54 INFO  : Successfully done query RDI_DATADIR 
+14:01:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:01:32 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB6EB6A' is selected.
+14:01:32 INFO  : 'jtag frequency' command is executed.
+14:01:32 INFO  : Context for 'APU' is selected.
+14:01:32 INFO  : System reset is completed.
+14:01:35 INFO  : 'after 3000' command is executed.
+14:01:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6EB6A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB6EB6A-13722093-0"}' command is executed.
+14:01:37 INFO  : Device configured successfully with "C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/_ide/bitstream/system_wrapper.bit"
+14:01:37 INFO  : Context for 'APU' is selected.
+14:01:37 INFO  : Hardware design and registers information is loaded from 'C:/Users/Moose/Documents/School/ECE492/Platform/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+14:01:37 INFO  : 'configparams force-mem-access 1' command is executed.
+14:01:37 INFO  : Context for 'APU' is selected.
+14:01:37 INFO  : Sourcing of 'C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/_ide/psinit/ps7_init.tcl' is done.
+14:01:38 INFO  : 'ps7_init' command is executed.
+14:01:38 INFO  : 'ps7_post_config' command is executed.
+14:01:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:01:38 INFO  : The application 'C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/Debug/SPARC.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:01:38 INFO  : 'configparams force-mem-access 0' command is executed.
+14:01:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6EB6A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB6EB6A-13722093-0"}
+fpga -file C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/Moose/Documents/School/ECE492/Platform/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/Debug/SPARC.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:01:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:01:38 INFO  : 'con' command is executed.
+14:01:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:01:38 INFO  : Launch script is exported to file 'C:\Users\Moose\Documents\School\ECE492\Platform\SPARC_system\_ide\scripts\debugger_sparc-default.tcl'
+14:02:01 INFO  : Disconnected from the channel tcfchan#1.
+14:02:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:02:05 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB6EB6A' is selected.
+14:02:05 INFO  : 'jtag frequency' command is executed.
+14:02:05 INFO  : Context for 'APU' is selected.
+14:02:05 INFO  : System reset is completed.
+14:02:08 INFO  : 'after 3000' command is executed.
+14:02:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6EB6A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB6EB6A-13722093-0"}' command is executed.
+14:02:09 INFO  : Device configured successfully with "C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/_ide/bitstream/system_wrapper.bit"
+14:02:09 INFO  : Context for 'APU' is selected.
+14:02:10 INFO  : Hardware design and registers information is loaded from 'C:/Users/Moose/Documents/School/ECE492/Platform/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+14:02:10 INFO  : 'configparams force-mem-access 1' command is executed.
+14:02:10 INFO  : Context for 'APU' is selected.
+14:02:10 INFO  : Sourcing of 'C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/_ide/psinit/ps7_init.tcl' is done.
+14:02:11 INFO  : 'ps7_init' command is executed.
+14:02:11 INFO  : 'ps7_post_config' command is executed.
+14:02:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:02:11 INFO  : The application 'C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/Debug/SPARC.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:02:11 INFO  : 'configparams force-mem-access 0' command is executed.
+14:02:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6EB6A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB6EB6A-13722093-0"}
+fpga -file C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/Moose/Documents/School/ECE492/Platform/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/Debug/SPARC.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:02:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:02:11 INFO  : 'con' command is executed.
+14:02:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:02:11 INFO  : Launch script is exported to file 'C:\Users\Moose\Documents\School\ECE492\Platform\SPARC_system\_ide\scripts\debugger_sparc-default.tcl'
+14:03:18 INFO  : Disconnected from the channel tcfchan#2.
+14:03:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:03:21 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB6EB6A' is selected.
+14:03:21 INFO  : 'jtag frequency' command is executed.
+14:03:21 INFO  : Context for 'APU' is selected.
+14:03:21 INFO  : System reset is completed.
+14:03:24 INFO  : 'after 3000' command is executed.
+14:03:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6EB6A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB6EB6A-13722093-0"}' command is executed.
+14:03:25 INFO  : Device configured successfully with "C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/_ide/bitstream/system_wrapper.bit"
+14:03:25 INFO  : Context for 'APU' is selected.
+14:03:27 INFO  : Hardware design and registers information is loaded from 'C:/Users/Moose/Documents/School/ECE492/Platform/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+14:03:27 INFO  : 'configparams force-mem-access 1' command is executed.
+14:03:27 INFO  : Context for 'APU' is selected.
+14:03:27 INFO  : Sourcing of 'C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/_ide/psinit/ps7_init.tcl' is done.
+14:03:27 INFO  : 'ps7_init' command is executed.
+14:03:27 INFO  : 'ps7_post_config' command is executed.
+14:03:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:03:27 INFO  : The application 'C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/Debug/SPARC.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:03:27 INFO  : 'configparams force-mem-access 0' command is executed.
+14:03:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6EB6A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB6EB6A-13722093-0"}
+fpga -file C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/Moose/Documents/School/ECE492/Platform/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/Debug/SPARC.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:03:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:03:28 INFO  : 'con' command is executed.
+14:03:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:03:28 INFO  : Launch script is exported to file 'C:\Users\Moose\Documents\School\ECE492\Platform\SPARC_system\_ide\scripts\debugger_sparc-default.tcl'
+14:06:03 INFO  : Disconnected from the channel tcfchan#3.
+14:06:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:06:04 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB6EB6A' is selected.
+14:06:04 INFO  : 'jtag frequency' command is executed.
+14:06:06 INFO  : Context for 'APU' is selected.
+14:06:06 INFO  : System reset is completed.
+14:06:09 INFO  : 'after 3000' command is executed.
+14:06:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6EB6A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB6EB6A-13722093-0"}' command is executed.
+14:06:10 INFO  : Device configured successfully with "C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/_ide/bitstream/system_wrapper.bit"
+14:06:10 INFO  : Context for 'APU' is selected.
+14:06:12 INFO  : Hardware design and registers information is loaded from 'C:/Users/Moose/Documents/School/ECE492/Platform/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+14:06:12 INFO  : 'configparams force-mem-access 1' command is executed.
+14:06:12 INFO  : Context for 'APU' is selected.
+14:06:12 INFO  : Sourcing of 'C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/_ide/psinit/ps7_init.tcl' is done.
+14:06:12 INFO  : 'ps7_init' command is executed.
+14:06:12 INFO  : 'ps7_post_config' command is executed.
+14:06:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:06:13 INFO  : The application 'C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/Debug/SPARC.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:06:13 INFO  : 'configparams force-mem-access 0' command is executed.
+14:06:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6EB6A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB6EB6A-13722093-0"}
+fpga -file C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/Moose/Documents/School/ECE492/Platform/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/Debug/SPARC.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:06:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:06:13 INFO  : 'con' command is executed.
+14:06:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:06:13 INFO  : Launch script is exported to file 'C:\Users\Moose\Documents\School\ECE492\Platform\SPARC_system\_ide\scripts\debugger_sparc-default.tcl'
+14:06:23 INFO  : Checking for BSP changes to sync application flags for project 'SPARC'...
+14:06:28 INFO  : Disconnected from the channel tcfchan#4.
+14:06:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:06:29 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB6EB6A' is selected.
+14:06:29 INFO  : 'jtag frequency' command is executed.
+14:06:29 INFO  : Context for 'APU' is selected.
+14:06:29 INFO  : System reset is completed.
+14:06:32 INFO  : 'after 3000' command is executed.
+14:06:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6EB6A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB6EB6A-13722093-0"}' command is executed.
+14:06:33 INFO  : Device configured successfully with "C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/_ide/bitstream/system_wrapper.bit"
+14:06:33 INFO  : Context for 'APU' is selected.
+14:06:35 INFO  : Hardware design and registers information is loaded from 'C:/Users/Moose/Documents/School/ECE492/Platform/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+14:06:35 INFO  : 'configparams force-mem-access 1' command is executed.
+14:06:35 INFO  : Context for 'APU' is selected.
+14:06:35 INFO  : Sourcing of 'C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/_ide/psinit/ps7_init.tcl' is done.
+14:06:35 INFO  : 'ps7_init' command is executed.
+14:06:35 INFO  : 'ps7_post_config' command is executed.
+14:06:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:06:35 INFO  : The application 'C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/Debug/SPARC.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:06:36 INFO  : 'configparams force-mem-access 0' command is executed.
+14:06:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6EB6A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB6EB6A-13722093-0"}
+fpga -file C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/Moose/Documents/School/ECE492/Platform/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/Debug/SPARC.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:06:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:06:36 INFO  : 'con' command is executed.
+14:06:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:06:36 INFO  : Launch script is exported to file 'C:\Users\Moose\Documents\School\ECE492\Platform\SPARC_system\_ide\scripts\debugger_sparc-default.tcl'
+14:24:05 INFO  : Disconnected from the channel tcfchan#5.
+14:24:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:24:06 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB6EB6A' is selected.
+14:24:06 INFO  : 'jtag frequency' command is executed.
+14:24:06 INFO  : Context for 'APU' is selected.
+14:24:06 INFO  : System reset is completed.
+14:24:09 INFO  : 'after 3000' command is executed.
+14:24:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6EB6A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB6EB6A-13722093-0"}' command is executed.
+14:24:10 INFO  : Device configured successfully with "C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/_ide/bitstream/system_wrapper.bit"
+14:24:10 INFO  : Context for 'APU' is selected.
+14:24:12 INFO  : Hardware design and registers information is loaded from 'C:/Users/Moose/Documents/School/ECE492/Platform/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+14:24:12 INFO  : 'configparams force-mem-access 1' command is executed.
+14:24:12 INFO  : Context for 'APU' is selected.
+14:24:12 INFO  : Sourcing of 'C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/_ide/psinit/ps7_init.tcl' is done.
+14:24:12 INFO  : 'ps7_init' command is executed.
+14:24:12 INFO  : 'ps7_post_config' command is executed.
+14:24:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:24:12 INFO  : The application 'C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/Debug/SPARC.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:24:12 INFO  : 'configparams force-mem-access 0' command is executed.
+14:24:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6EB6A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB6EB6A-13722093-0"}
+fpga -file C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/Moose/Documents/School/ECE492/Platform/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/Debug/SPARC.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:24:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:24:12 INFO  : 'con' command is executed.
+14:24:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:24:12 INFO  : Launch script is exported to file 'C:\Users\Moose\Documents\School\ECE492\Platform\SPARC_system\_ide\scripts\debugger_sparc-default.tcl'
+14:25:48 INFO  : Disconnected from the channel tcfchan#6.
+14:25:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:25:49 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB6EB6A' is selected.
+14:25:49 INFO  : 'jtag frequency' command is executed.
+14:25:51 INFO  : Context for 'APU' is selected.
+14:25:51 INFO  : System reset is completed.
+14:25:54 INFO  : 'after 3000' command is executed.
+14:25:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6EB6A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB6EB6A-13722093-0"}' command is executed.
+14:25:55 INFO  : Device configured successfully with "C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/_ide/bitstream/system_wrapper.bit"
+14:25:56 INFO  : Context for 'APU' is selected.
+14:25:57 INFO  : Hardware design and registers information is loaded from 'C:/Users/Moose/Documents/School/ECE492/Platform/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+14:25:57 INFO  : 'configparams force-mem-access 1' command is executed.
+14:25:57 INFO  : Context for 'APU' is selected.
+14:25:57 INFO  : Sourcing of 'C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/_ide/psinit/ps7_init.tcl' is done.
+14:25:57 INFO  : 'ps7_init' command is executed.
+14:25:57 INFO  : 'ps7_post_config' command is executed.
+14:25:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:25:57 INFO  : The application 'C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/Debug/SPARC.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:25:57 INFO  : 'configparams force-mem-access 0' command is executed.
+14:25:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6EB6A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB6EB6A-13722093-0"}
+fpga -file C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/Moose/Documents/School/ECE492/Platform/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/Debug/SPARC.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:25:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:25:58 INFO  : 'con' command is executed.
+14:25:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:25:58 INFO  : Launch script is exported to file 'C:\Users\Moose\Documents\School\ECE492\Platform\SPARC_system\_ide\scripts\debugger_sparc-default.tcl'
+14:40:24 INFO  : Disconnected from the channel tcfchan#7.
+14:40:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:40:25 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB6EB6A' is selected.
+14:40:25 ERROR : port closed
+14:40:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+14:40:25 ERROR : port closed
+14:40:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:40:50 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB6EB6A' is selected.
+14:40:50 INFO  : 'jtag frequency' command is executed.
+14:40:50 INFO  : Context for 'APU' is selected.
+14:40:50 INFO  : System reset is completed.
+14:40:53 INFO  : 'after 3000' command is executed.
+14:40:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6EB6A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB6EB6A-13722093-0"}' command is executed.
+14:40:55 INFO  : Device configured successfully with "C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/_ide/bitstream/system_wrapper.bit"
+14:40:55 INFO  : Context for 'APU' is selected.
+14:40:56 INFO  : Hardware design and registers information is loaded from 'C:/Users/Moose/Documents/School/ECE492/Platform/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+14:40:56 INFO  : 'configparams force-mem-access 1' command is executed.
+14:40:56 INFO  : Context for 'APU' is selected.
+14:40:56 INFO  : Sourcing of 'C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/_ide/psinit/ps7_init.tcl' is done.
+14:40:57 INFO  : 'ps7_init' command is executed.
+14:40:57 INFO  : 'ps7_post_config' command is executed.
+14:40:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:40:57 INFO  : The application 'C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/Debug/SPARC.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:40:57 INFO  : 'configparams force-mem-access 0' command is executed.
+14:40:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6EB6A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AB6EB6A-13722093-0"}
+fpga -file C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/Moose/Documents/School/ECE492/Platform/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/Moose/Documents/School/ECE492/Platform/SPARC/Debug/SPARC.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:40:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:40:57 INFO  : 'con' command is executed.
+14:40:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:40:57 INFO  : Launch script is exported to file 'C:\Users\Moose\Documents\School\ECE492\Platform\SPARC_system\_ide\scripts\debugger_sparc-default.tcl'
+15:59:43 INFO  : Disconnected from the channel tcfchan#8.

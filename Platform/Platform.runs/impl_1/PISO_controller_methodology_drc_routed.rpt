@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date         : Fri Feb  3 16:06:56 2023
+| Date         : Fri Feb 10 00:04:53 2023
 | Host         : DESKTOP-4VIHOFO running 64-bit major release  (build 9200)
 | Command      : report_methodology -file PISO_controller_methodology_drc_routed.rpt -pb PISO_controller_methodology_drc_routed.pb -rpx PISO_controller_methodology_drc_routed.rpx
 | Design       : PISO_controller
@@ -23,12 +23,13 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 43
-+-----------+------------------+-----------------------------+------------+
-| Rule      | Severity         | Description                 | Violations |
-+-----------+------------------+-----------------------------+------------+
-| TIMING-17 | Critical Warning | Non-clocked sequential cell | 43         |
-+-----------+------------------+-----------------------------+------------+
+             Violations found: 44
++-----------+------------------+-------------------------------+------------+
+| Rule      | Severity         | Description                   | Violations |
++-----------+------------------+-------------------------------+------------+
+| TIMING-17 | Critical Warning | Non-clocked sequential cell   | 43         |
+| TIMING-18 | Warning          | Missing input or output delay | 1          |
++-----------+------------------+-------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
@@ -245,6 +246,11 @@ Related violations: <none>
 TIMING-17#43 Critical Warning
 Non-clocked sequential cell  
 The clock pin sending_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An output delay is missing on clk_s_out relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 
