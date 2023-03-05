@@ -7,7 +7,7 @@
 #include <map>
 
 class SPARC {
-private:
+public:
     std::map<float, uint8_t> voltageMap; 
     
 public:

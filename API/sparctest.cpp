@@ -9,6 +9,10 @@ int main() {
     }
     
     std::cout << "Initialized SPARC" << std::endl;
+
+    for (auto item : sparc.voltageMap) {
+        std::cout << item.first << " = " << +item.second << std::endl;
+    }
     
     return EXIT_SUCCESS;
 }

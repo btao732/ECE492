@@ -3,7 +3,7 @@
 SPARC::SPARC() {
     std::ifstream infile("voltages.txt");
     float voltage;
-    uint8_t byte;
+    int byte;
     
     if (!infile) {
         std::cout << "Error reading from file" << std::endl;
