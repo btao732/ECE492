@@ -1,5 +1,9 @@
 #include "sparc.hpp"
 
+#include <math.h>
+#include <iostream>
+#include <fstream>
+
 SPARC::SPARC() {
     std::ifstream infile("voltages.txt");
     float voltage;

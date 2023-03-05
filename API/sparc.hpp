@@ -4,9 +4,6 @@
 #define MAX_VOLTAGE 300.0f
 
 #include <cstdint>
-#include <math.h>
-#include <iostream>
-#include <fstream>
 #include <map>
 
 /*
