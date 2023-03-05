@@ -32,14 +32,14 @@ SPARC::SPARC(char *filename) {
 
 uint8_t SPARC::encodeVoltage(float voltage) {
     float delta = MAX_VOLTAGE;
-    float key;
+    float closestVoltage;
     for (auto item : voltageMap) {
         float newDelta = voltage - item.first;
         if (fabsf(newDelta) < fabsf(delta)) {
             delta = newDelta;
-            key = item.first;
+            closestVoltage = item.first;
         }
     }
 
-    return voltageMap[key];
+    return voltageMap[closestVoltage];
 }
