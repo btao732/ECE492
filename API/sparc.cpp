@@ -49,7 +49,7 @@ uint8_t SPARC::encodeVoltage(float voltage) {
 }
 
 bool SPARC::uploadWaveform(float voltageArray[], int n) {
-    char buffer[1] = {0};
+    char buffer[2] = {0};
     std::ofstream outputFile("waveformBinary.bin", std::ios::out | std::ios::binary);
 
     if (!outputFile) {
@@ -58,9 +58,20 @@ bool SPARC::uploadWaveform(float voltageArray[], int n) {
     }
 
     for (int i = 0; i < n; i++) {
-        buffer[0] = encodeVoltage(voltageArray[i]);
-        outputFile.write(buffer, 1);
+        uint16_t value = map_8_to_16(encodeVoltage(voltageArray[i]));
+        buffer[0] = value; 
+        buffer[1] = (value >> 8);
+        outputFile.write(buffer, 2);
     }
     
     return true;
+}
+
+uint16_t SPARC::map_8_to_16(uint8_t b) {
+    uint8_t i;
+    uint16_t r;
+    for (i = 0, r = 0; i < 8; i++) {
+        r |= (b & (1 << i)) ? (1 << (2 * i)) : (1 << (2 * i + 1));
+    }
+    return r;
 }

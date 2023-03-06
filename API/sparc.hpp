@@ -17,6 +17,13 @@ private:
     */
     std::map<float, uint8_t> voltageMap; 
 
+    /*
+    Function developed by Randy Palamar to generate
+    appropriate 16 bit value from the 8 bit value,
+    dependant on hardware architecture.
+    */
+    uint16_t map_8_to_16(uint8_t b);
+
 public:
     /*
     Default constructor uses file "voltages.txt" to 
