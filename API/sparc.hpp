@@ -51,10 +51,16 @@ public:
     uint8_t encodeVoltage(float voltage);
 
     /*
-    Upload voltage waveform to SPARC system, 
-    takes an array of floats and size of the array.
+    Upload voltage waveform for one channel to SPARC 
+    system, takes an array of floats and size of the array.
     */
-    bool uploadWaveform(float *voltageArray, int size);
+    bool uploadWaveform(float *voltageArray, int len);
+
+    /*
+    Upload voltage waveform for n channels to SPARC 
+    system, takes nchannels x len voltageMatrix.
+    */
+    bool uploadWaveform(float **voltageMatrix, int nchannels, int len);
 };
 
 #endif

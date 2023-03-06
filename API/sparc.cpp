@@ -50,22 +50,43 @@ uint8_t SPARC::encodeVoltage(float voltage) {
     return voltageMap[closestVoltage];
 }
 
-bool SPARC::uploadWaveform(float *voltageArray, int n) {
+bool SPARC::uploadWaveform(float *voltageArray, int len) {
     char buffer[2] = {0};
-    std::ofstream outputFile("waveformBinary.bin", std::ios::out | std::ios::binary);
+    std::ofstream outputFile("waveform.bin", std::ios::out | std::ios::binary);
 
     if (!outputFile) {
-        std::cout << "Error opening waveformBinary.bin" << std::endl;
+        std::cout << "Error opening waveform.bin" << std::endl;
         return false;
     }
 
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < len; i++) {
         uint16_t value = map_8_to_16(encodeVoltage(voltageArray[i]));
         buffer[0] = (value >> 8); 
         buffer[1] = value;
         outputFile.write(buffer, 2);
     }
     
+    return true;
+}
+
+bool SPARC::uploadWaveform(float **voltageMatrix, int nchannels, int len) {
+    char buffer[2] = { 0 };
+    std::ofstream outputFile("waveform.bin", std::ios::out | std::ios::binary);
+
+    if (!outputFile) {
+        std::cout << "Error opening waveform.bin" << std::endl;
+        return false;
+    }
+
+    for (int i = 0; i < nchannels; i++) {
+        for (int j = 0; j < len; j++) {
+            uint16_t value = map_8_to_16(encodeVoltage(voltageMatrix[i][j]));
+            buffer[0] = (value >> 8);
+            buffer[1] = value;
+            outputFile.write(buffer, 2);
+        }
+    }
+
     return true;
 }
 

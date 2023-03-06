@@ -4,9 +4,25 @@
 int main() {
     SPARC sparc;
 
-    float voltageArray[100] = { 50.7f, 187.4, 245.1 };
+    float **voltageMatrix;
+    voltageMatrix = new float* [3];
+    for (int i = 0; i < 3; i++) {
+        voltageMatrix[i] = new float[3];
+    }
     
-    if (!sparc.uploadWaveform(voltageArray, 100)) {
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            if (i == 0) {
+                voltageMatrix[i][j] = 0.0f;
+            } else if (i == 1) {
+                voltageMatrix[i][j] = 25.0f;
+            } else {
+                voltageMatrix[i][j] = 100.0f;
+            }
+        }
+    }
+    
+    if (!sparc.uploadWaveform(voltageMatrix, 3, 3)) {
         return EXIT_FAILURE;
     }
 
