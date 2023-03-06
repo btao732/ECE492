@@ -22,6 +22,7 @@ private:
     appropriate 16 bit value from the 8 bit value,
     dependant on hardware architecture.
     */
+public:
     uint16_t map_8_to_16(uint8_t b);
 
 public:

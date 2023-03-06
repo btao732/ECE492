@@ -61,8 +61,8 @@ bool SPARC::uploadWaveform(float voltageArray[], int n) {
 
     for (int i = 0; i < n; i++) {
         uint16_t value = map_8_to_16(encodeVoltage(voltageArray[i]));
-        buffer[0] = value; 
-        buffer[1] = (value >> 8);
+        buffer[0] = (value >> 8); 
+        buffer[1] = value;
         outputFile.write(buffer, 2);
     }
     
