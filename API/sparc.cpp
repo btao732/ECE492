@@ -69,7 +69,7 @@ bool SPARC::uploadWaveform(float voltageArray[], int n) {
     return true;
 }
 
-uint16_t SPARC::map_8_to_16(uint8_t b) {
+inline uint16_t SPARC::map_8_to_16(uint8_t b) {
     uint8_t i;
     uint16_t r;
     for (i = 0, r = 0; i < 8; i++) {
