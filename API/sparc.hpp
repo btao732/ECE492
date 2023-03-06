@@ -54,7 +54,7 @@ public:
     Upload voltage waveform to SPARC system, 
     takes an array of floats and size of the array.
     */
-    bool uploadWaveform(float voltageArray[], int size);
+    bool uploadWaveform(float *voltageArray, int size);
 };
 
 #endif
