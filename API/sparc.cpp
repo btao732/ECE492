@@ -1,5 +1,7 @@
 #include "sparc.hpp"
 
+#include <cstdint>
+#include <map>
 #include <math.h>
 #include <iostream>
 #include <fstream>
