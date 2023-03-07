@@ -3,9 +3,6 @@
 
 #define MAX_VOLTAGE 300.0f
 
-#include "include\MATLAB\MatlabEngine.hpp"
-#include "include\MATLAB\MatlabDataArray.hpp"
-
 #include <cstdint>
 #include <vector>
 #include <map>
