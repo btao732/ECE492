@@ -3,7 +3,11 @@
 
 #define MAX_VOLTAGE 300.0f
 
+#include "include\MATLAB\MatlabEngine.hpp"
+#include "include\MATLAB\MatlabDataArray.hpp"
+
 #include <cstdint>
+#include <vector>
 #include <map>
 
 /*
@@ -54,13 +58,13 @@ public:
     Upload voltage waveform for one channel to SPARC 
     system, takes an array of floats and size of the array.
     */
-    bool uploadWaveform(float *voltageArray, int len);
+    bool uploadOneChannelWaveform(std::vector<float> voltages);
 
     /*
     Upload voltage waveform for n channels to SPARC 
     system, takes nchannels x len voltageMatrix.
     */
-    bool uploadWaveform(float **voltageMatrix, int nchannels, int len);
+    bool uploadnChannelWaveform(std::vector<float> voltageMatrix);
 };
 
 #endif

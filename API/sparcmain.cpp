@@ -22,7 +22,7 @@ int main() {
         }
     }
     
-    if (!sparc.uploadWaveform(voltageMatrix, 3, 3)) {
+    if (!sparc.uploadnChannelWaveform(voltageMatrix)) {
         return EXIT_FAILURE;
     }
 
