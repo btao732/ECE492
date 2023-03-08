@@ -11,7 +11,7 @@
 Class for initializing and controlling SPARC arrays.
 */
 class SPARC {
-private:
+public:
     /*
     Lookup Table for converting float voltages to 
     an 8 bit representation.
@@ -23,7 +23,7 @@ private:
     appropriate 16 bit value from the 8 bit value,
     dependant on hardware architecture.
     */
-    inline uint16_t map_8_to_16(uint8_t b);
+    uint16_t map_8_to_16(uint8_t b);
 
 public:
     /*

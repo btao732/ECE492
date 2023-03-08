@@ -81,7 +81,7 @@ bool SPARC::uploadnChannelWaveform(std::vector<float> voltageMatrix) {
     return true;
 }
 
-inline uint16_t SPARC::map_8_to_16(uint8_t b) {
+uint16_t SPARC::map_8_to_16(uint8_t b) {
     uint8_t i;
     uint16_t r;
     for (i = 0, r = 0; i < 8; i++) {
