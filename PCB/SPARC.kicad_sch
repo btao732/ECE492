@@ -6,6 +6,7 @@
 
   (title_block
     (title "HVDAC - SPARC Capstone")
+    (date "2023-03-07")
     (rev "01")
     (company "SPARC Capstone")
     (comment 1 "Originally by Randy Palamar")
@@ -3836,8 +3837,8 @@
     (pin "65" (uuid b235cd62-e1e1-411b-aa4b-c2de9579ee6a))
     (pin "7" (uuid 9f3c42fb-0dbe-49ff-ab33-af9ed8b06c35))
     (pin "8" (uuid b1d9fdd4-049a-4923-8545-c6c87df203ed))
-    (pin "9" (uuid c6583940-edea-4e23-a5bb-320d80305098))
-    (pin "9" (uuid c6583940-edea-4e23-a5bb-320d80305098))
+    (pin "9" (uuid c6583940-edea-4e23-a5bb-320d80305099))
+    (pin "9" (uuid c6583940-edea-4e23-a5bb-320d80305099))
   )
 
   (symbol (lib_id "power:GND") (at 180.721 35.306 0) (unit 1)
@@ -4416,8 +4417,8 @@
     (pin "65" (uuid 71a9d440-34ce-4aaa-9423-aebe690ce864))
     (pin "7" (uuid 49d69692-8373-423b-8dad-0dd3fc5bb170))
     (pin "8" (uuid 5c91847a-1797-41df-a9a0-980e75d75449))
-    (pin "9" (uuid ef7688ac-616c-427e-a7cc-53fba772c541))
-    (pin "9" (uuid ef7688ac-616c-427e-a7cc-53fba772c541))
+    (pin "9" (uuid ef7688ac-616c-427e-a7cc-53fba772c542))
+    (pin "9" (uuid ef7688ac-616c-427e-a7cc-53fba772c542))
   )
 
   (symbol (lib_id "Device:R") (at 87.503 88.392 90) (unit 1)
