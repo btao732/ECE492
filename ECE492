@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-17T22:48:14.586Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="cKqvQwHLcg-aKaCtAXOq" version="20.8.20" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2023-03-17T22:51:15.016Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="z-btXzgoty_FCCLrv_6F" version="20.8.20" type="github" pages="6">
   <diagram name="use case" id="0783ab3e-0a74-02c8-0abd-f7b4e66b4bec">
     <mxGraphModel dx="1526" dy="2039" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
@@ -654,8 +654,20 @@
         <mxCell id="-AmHhyX9yfg1Ez2i-toC-16" value="Shift Register" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="840" y="135" width="190" height="130" as="geometry" />
         </mxCell>
+        <mxCell id="pPLCIS5tQya6s3zMT03R-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-AmHhyX9yfg1Ez2i-toC-24" target="pPLCIS5tQya6s3zMT03R-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="-AmHhyX9yfg1Ez2i-toC-24" value="Pin 2" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="690" y="140" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="pPLCIS5tQya6s3zMT03R-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-AmHhyX9yfg1Ez2i-toC-25" target="pPLCIS5tQya6s3zMT03R-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="760" y="170" />
+              <mxPoint x="760" y="206" />
+              <mxPoint x="840" y="206" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="-AmHhyX9yfg1Ez2i-toC-25" value="Pin 3" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="690" y="160" width="30" height="20" as="geometry" />
@@ -674,6 +686,9 @@
         </mxCell>
         <mxCell id="-AmHhyX9yfg1Ez2i-toC-31" value="Pin 8" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="690" y="260" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="pPLCIS5tQya6s3zMT03R-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="-AmHhyX9yfg1Ez2i-toC-32" target="pPLCIS5tQya6s3zMT03R-2">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-AmHhyX9yfg1Ez2i-toC-32" value="Pin 1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="690" y="120" width="30" height="20" as="geometry" />
@@ -725,6 +740,9 @@
         </mxCell>
         <mxCell id="pPLCIS5tQya6s3zMT03R-8" value="+3.3V" style="verticalLabelPosition=top;verticalAlign=bottom;shape=mxgraph.electrical.signal_sources.vdd;shadow=0;dashed=0;align=center;strokeWidth=1;fontSize=24;html=1;flipV=1;" vertex="1" parent="1">
           <mxGeometry x="905" y="95" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pPLCIS5tQya6s3zMT03R-11" value="" style="pointerEvents=1;verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.signal_sources.protective_earth;" vertex="1" parent="1">
+          <mxGeometry x="922.5" y="265" width="25" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
