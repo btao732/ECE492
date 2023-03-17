@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-17T23:35:01.259Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="bg_ycSMPZ1fWxMDye4EX" version="20.8.20" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2023-03-17T23:36:42.015Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="oY86bPUtgEZqVIBhcsMF" version="20.8.20" type="github" pages="6">
   <diagram name="use case" id="0783ab3e-0a74-02c8-0abd-f7b4e66b4bec">
     <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
@@ -384,6 +384,12 @@
         <mxCell id="0m5fzOpfdsfF6rkhF_po-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="U9itEOrIpzU1v_4pY13e-6" target="0m5fzOpfdsfF6rkhF_po-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="0m5fzOpfdsfF6rkhF_po-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="U9itEOrIpzU1v_4pY13e-6" target="0m5fzOpfdsfF6rkhF_po-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0m5fzOpfdsfF6rkhF_po-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="U9itEOrIpzU1v_4pY13e-6" target="0m5fzOpfdsfF6rkhF_po-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="U9itEOrIpzU1v_4pY13e-6" value="ARM Cortex A9" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" vertex="1" parent="1">
           <mxGeometry x="425" y="270" width="120" height="80" as="geometry" />
         </mxCell>
@@ -391,7 +397,7 @@
           <mxGeometry x="670" y="375" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="U9itEOrIpzU1v_4pY13e-18" value="&lt;h1&gt;Firmware running on FPGA&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="255" y="440" width="330" height="40" as="geometry" />
+          <mxGeometry x="255" y="450" width="330" height="40" as="geometry" />
         </mxCell>
         <mxCell id="U9itEOrIpzU1v_4pY13e-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="U9itEOrIpzU1v_4pY13e-20" target="U9itEOrIpzU1v_4pY13e-4">
           <mxGeometry relative="1" as="geometry" />
@@ -436,8 +442,11 @@
         <mxCell id="0m5fzOpfdsfF6rkhF_po-2" value="AXI GPIO" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" vertex="1" parent="1">
           <mxGeometry x="820" y="270" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="0m5fzOpfdsfF6rkhF_po-7" value="ARM Cortex A9" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" vertex="1" parent="1">
-          <mxGeometry x="425" y="200" width="120" height="80" as="geometry" />
+        <mxCell id="0m5fzOpfdsfF6rkhF_po-7" value="RAM" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" vertex="1" parent="1">
+          <mxGeometry x="425" y="170" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="0m5fzOpfdsfF6rkhF_po-8" value="DDR Memory" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" vertex="1" parent="1">
+          <mxGeometry x="425" y="370" width="120" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
