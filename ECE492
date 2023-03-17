@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-17T23:09:52.702Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="Ixf8KM1vg3HX3iAb86TF" version="20.8.20" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2023-03-17T23:10:33.260Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="N9rMH-10RE77Bu_aFJI2" version="20.8.20" type="github" pages="6">
   <diagram name="use case" id="0783ab3e-0a74-02c8-0abd-f7b4e66b4bec">
     <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
@@ -863,6 +863,9 @@
             <mxPoint x="1080" y="560" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="pPLCIS5tQya6s3zMT03R-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="pPLCIS5tQya6s3zMT03R-50" target="pPLCIS5tQya6s3zMT03R-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="pPLCIS5tQya6s3zMT03R-50" value="Channel n Shift register" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="875" y="676.25" width="120" height="60" as="geometry" />
         </mxCell>
@@ -871,6 +874,15 @@
         </mxCell>
         <mxCell id="pPLCIS5tQya6s3zMT03R-54" value="" style="pointerEvents=1;verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.signal_sources.protective_earth;" vertex="1" parent="1">
           <mxGeometry x="922.5" y="736.25" width="25" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="pPLCIS5tQya6s3zMT03R-56" value="R-2R Ladder" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="676.25" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pPLCIS5tQya6s3zMT03R-57" value="+/-250V" style="verticalLabelPosition=top;verticalAlign=bottom;shape=mxgraph.electrical.signal_sources.vdd;shadow=0;dashed=0;align=center;strokeWidth=1;fontSize=24;html=1;flipV=1;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="636.25" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pPLCIS5tQya6s3zMT03R-58" value="" style="pointerEvents=1;verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.signal_sources.protective_earth;" vertex="1" parent="1">
+          <mxGeometry x="1198" y="736.25" width="25" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
