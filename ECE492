@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-03-17T21:13:58.669Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="BP2vbnSQRSpL7VkEphQN" version="20.8.20" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2023-03-17T21:27:39.914Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="8rJWD3Be_BwnO9EUNiJD" version="20.8.20" type="github" pages="6">
   <diagram name="use case" id="0783ab3e-0a74-02c8-0abd-f7b4e66b4bec">
-    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1221" dy="1851" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -464,6 +464,27 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="ClUGJzn3vgOrBd8AJ0QG-1" value="Zybo Z7-7010 FPGA" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="140" width="490" height="550" as="geometry" />
+        </mxCell>
+        <mxCell id="ClUGJzn3vgOrBd8AJ0QG-2" value="" style="pointerEvents=1;verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.signal_sources.protective_earth;" vertex="1" parent="1">
+          <mxGeometry x="327.5" y="690" width="22.5" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ClUGJzn3vgOrBd8AJ0QG-3" value="V&lt;sub&gt;dd&lt;/sub&gt;" style="verticalLabelPosition=top;verticalAlign=bottom;shape=mxgraph.electrical.signal_sources.vdd;shadow=0;dashed=0;align=center;strokeWidth=1;fontSize=24;html=1;flipV=1;" vertex="1" parent="1">
+          <mxGeometry x="308.75" y="100" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ClUGJzn3vgOrBd8AJ0QG-4" value="PMOD Header JD" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ClUGJzn3vgOrBd8AJ0QG-5" value="PMOD Header JD" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ClUGJzn3vgOrBd8AJ0QG-6" value="PMOD Header JD" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ClUGJzn3vgOrBd8AJ0QG-7" value="PMOD Header JD" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="490" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
