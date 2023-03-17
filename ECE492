@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-17T22:42:02.382Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="rQ8rl1ZP2VPExlTyp9mg" version="20.8.20" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2023-03-17T22:43:26.130Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="WGAWK0qJDwMrOsPYORiE" version="20.8.20" type="github" pages="6">
   <diagram name="use case" id="0783ab3e-0a74-02c8-0abd-f7b4e66b4bec">
     <mxGraphModel dx="1526" dy="2039" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
@@ -564,9 +564,6 @@
         <mxCell id="ClUGJzn3vgOrBd8AJ0QG-3" value="+3.3V" style="verticalLabelPosition=top;verticalAlign=bottom;shape=mxgraph.electrical.signal_sources.vdd;shadow=0;dashed=0;align=center;strokeWidth=1;fontSize=24;html=1;flipV=1;" vertex="1" parent="1">
           <mxGeometry x="398.75" y="80" width="60" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="-AmHhyX9yfg1Ez2i-toC-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ClUGJzn3vgOrBd8AJ0QG-4" target="-AmHhyX9yfg1Ez2i-toC-16">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="ClUGJzn3vgOrBd8AJ0QG-4" value="PMOD Header JC" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="560" y="120" width="160" height="160" as="geometry" />
         </mxCell>
@@ -654,8 +651,8 @@
             <mxPoint x="460" y="390" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-AmHhyX9yfg1Ez2i-toC-16" value="Channel 1 Shift Register" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="940" y="165" width="120" height="60" as="geometry" />
+        <mxCell id="-AmHhyX9yfg1Ez2i-toC-16" value="Channel 1 &lt;br&gt;Shift Register" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="940" y="160" width="190" height="130" as="geometry" />
         </mxCell>
         <mxCell id="-AmHhyX9yfg1Ez2i-toC-24" value="Pin 2" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="690" y="140" width="30" height="20" as="geometry" />
@@ -710,6 +707,12 @@
             <mxPoint x="470" y="430" as="sourcePoint" />
             <mxPoint x="520" y="380" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="pPLCIS5tQya6s3zMT03R-2" value="CLK" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="940" y="160" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="pPLCIS5tQya6s3zMT03R-3" value="Data" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="940" y="180" width="30" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
