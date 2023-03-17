@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-03-17T20:39:11.453Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="MAFhJyXyvZ1CG7Zk6kM5" version="21.0.7" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2023-03-17T20:41:21.183Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="CihQSy-noFDiaOpQ9KqV" version="20.8.20" type="github" pages="5">
   <diagram name="use case" id="0783ab3e-0a74-02c8-0abd-f7b4e66b4bec">
-    <mxGraphModel dx="1313" dy="1786" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -101,7 +101,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="l-wFT_b2IggKGpKoUos0" name="system architecture">
-    <mxGraphModel dx="2333" dy="1220" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
+    <mxGraphModel dx="1221" dy="751" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -117,9 +117,9 @@
         <mxCell id="NEbDM9hdOid-LWQb8EAm-2" value="USB" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" parent="1" vertex="1">
           <mxGeometry x="450" y="480" width="70" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="NEbDM9hdOid-LWQb8EAm-3" value="" style="endArrow=none;dashed=1;html=1;rounded=0;exitX=1.014;exitY=0.716;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.002;entryY=0.527;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;" parent="1" source="NEbDM9hdOid-LWQb8EAm-1" target="wf5D50_W6HLfwrFlIa5l-1" edge="1">
+        <mxCell id="NEbDM9hdOid-LWQb8EAm-3" value="" style="endArrow=none;dashed=1;html=1;rounded=0;strokeWidth=2;" parent="1" target="wf5D50_W6HLfwrFlIa5l-3" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="630" y="590" as="sourcePoint" />
+            <mxPoint x="520" y="510" as="sourcePoint" />
             <mxPoint x="680" y="540" as="targetPoint" />
           </mxGeometry>
         </mxCell>
@@ -252,7 +252,7 @@
             <mxPoint x="440" y="550" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="TX1y-9oooYc3sYSYYFnl-14" value="Generating &#xa;binary file" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;" parent="1" vertex="1">
+        <mxCell id="TX1y-9oooYc3sYSYYFnl-14" value="Binary File&#xa;Generator" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;" parent="1" vertex="1">
           <mxGeometry x="290" y="542.5" width="100" height="50" as="geometry" />
         </mxCell>
         <mxCell id="TX1y-9oooYc3sYSYYFnl-15" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="TX1y-9oooYc3sYSYYFnl-14" target="NEbDM9hdOid-LWQb8EAm-1" edge="1">
