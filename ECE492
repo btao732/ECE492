@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-17T23:12:25.186Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="qqxa_AWzvVjo9nLQ-Tzf" version="20.8.20" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2023-03-17T23:14:41.668Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="sq8hqgh2nb59nmB7Z57X" version="20.8.20" type="github" pages="6">
   <diagram name="use case" id="0783ab3e-0a74-02c8-0abd-f7b4e66b4bec">
     <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
@@ -551,7 +551,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="UoTXL0AgdA-Y_pb4QzL7" name="SystemBlockDesign">
-    <mxGraphModel dx="2937" dy="1073" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2569" dy="884" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -630,7 +630,7 @@
         <mxCell id="pPLCIS5tQya6s3zMT03R-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-AmHhyX9yfg1Ez2i-toC-16" target="pPLCIS5tQya6s3zMT03R-7">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="-AmHhyX9yfg1Ez2i-toC-16" value="Channel 1 &lt;br&gt;Shift Register" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="-AmHhyX9yfg1Ez2i-toC-16" value="Channel 1 &lt;br&gt;HV2621" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="840" y="135" width="190" height="130" as="geometry" />
         </mxCell>
         <mxCell id="pPLCIS5tQya6s3zMT03R-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-AmHhyX9yfg1Ez2i-toC-24" target="pPLCIS5tQya6s3zMT03R-4">
@@ -788,7 +788,7 @@
         <mxCell id="pPLCIS5tQya6s3zMT03R-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pPLCIS5tQya6s3zMT03R-29" target="pPLCIS5tQya6s3zMT03R-35">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="pPLCIS5tQya6s3zMT03R-29" value="Channel 2&lt;br&gt;Shift Register" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="pPLCIS5tQya6s3zMT03R-29" value="Channel 2&lt;br&gt;HV2621" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="840" y="420" width="190" height="130" as="geometry" />
         </mxCell>
         <mxCell id="pPLCIS5tQya6s3zMT03R-30" value="CLK" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -840,34 +840,34 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="pPLCIS5tQya6s3zMT03R-50" value="Channel n Shift register" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="875" y="677.5" width="120" height="60" as="geometry" />
+          <mxGeometry x="880" y="677.5" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="pPLCIS5tQya6s3zMT03R-52" value="+3.3V" style="verticalLabelPosition=top;verticalAlign=bottom;shape=mxgraph.electrical.signal_sources.vdd;shadow=0;dashed=0;align=center;strokeWidth=1;fontSize=24;html=1;flipV=1;" vertex="1" parent="1">
-          <mxGeometry x="905" y="637.5" width="60" height="40" as="geometry" />
+          <mxGeometry x="910" y="637.5" width="60" height="40" as="geometry" />
         </mxCell>
         <mxCell id="pPLCIS5tQya6s3zMT03R-54" value="" style="pointerEvents=1;verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.signal_sources.protective_earth;" vertex="1" parent="1">
-          <mxGeometry x="922.5" y="736.25" width="25" height="20" as="geometry" />
+          <mxGeometry x="927.5" y="736.25" width="25" height="20" as="geometry" />
         </mxCell>
         <mxCell id="pPLCIS5tQya6s3zMT03R-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pPLCIS5tQya6s3zMT03R-56" target="pPLCIS5tQya6s3zMT03R-64">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="pPLCIS5tQya6s3zMT03R-56" value="R-2R Ladder" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1150" y="677.5" width="120" height="60" as="geometry" />
+          <mxGeometry x="1155" y="677.5" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="pPLCIS5tQya6s3zMT03R-57" value="+/-250V" style="verticalLabelPosition=top;verticalAlign=bottom;shape=mxgraph.electrical.signal_sources.vdd;shadow=0;dashed=0;align=center;strokeWidth=1;fontSize=24;html=1;flipV=1;" vertex="1" parent="1">
-          <mxGeometry x="1180" y="636.25" width="60" height="40" as="geometry" />
+          <mxGeometry x="1185" y="636.25" width="60" height="40" as="geometry" />
         </mxCell>
         <mxCell id="pPLCIS5tQya6s3zMT03R-58" value="" style="pointerEvents=1;verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.signal_sources.protective_earth;" vertex="1" parent="1">
-          <mxGeometry x="1198" y="736.25" width="25" height="20" as="geometry" />
+          <mxGeometry x="1203" y="736.25" width="25" height="20" as="geometry" />
         </mxCell>
         <mxCell id="pPLCIS5tQya6s3zMT03R-60" value="High Voltage &lt;br&gt;Bias Signal" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1300" y="653.75" width="90" height="40" as="geometry" />
+          <mxGeometry x="1305" y="653.75" width="90" height="40" as="geometry" />
         </mxCell>
         <mxCell id="pPLCIS5tQya6s3zMT03R-61" value="16 Bit Data line" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1020" y="670" width="100" height="30" as="geometry" />
+          <mxGeometry x="1025" y="670" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="pPLCIS5tQya6s3zMT03R-64" value="Channel 2 SPARC ultrasound transducer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1410" y="677.5" width="120" height="60" as="geometry" />
+          <mxGeometry x="1415" y="677.5" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
