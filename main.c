@@ -43,19 +43,17 @@ u16* loadChannelDataPISO(u8* buffer, u32 numberOfChannels, u32 numberOfSamples, 
 	return data;
 }
 
-// Max of 32 channels
+// Max of 30 channels
 void sendChannelData(u8 channelData[], u32 numberOfChannels, u32 samplesPerChannel) {
 	for (int sample = 0; sample < samplesPerChannel; sample++) {
 		for (int byte = 0; byte < 2; byte++) {
-			for (int bit = 7; bit >= 0; bit++) {
+			for (int bit = 7; bit >= 0; bit--) {
 				u32 outputData = 0; // Datatype determines max number of channels
 				u8 dataMask = 1 << bit;
 				for (int channel = 0; channel < numberOfChannels; channel++) {
-					u8 rawData = channelData[channel * samplesPerChannel + sample + byte]; // Need to fix this
-					xil_printf("%x", rawData);
-					outputData += ((rawData & dataMask) >> bit) << channel; // This is good
+					u8 rawData = channelData[channel * samplesPerChannel + sample + byte];
+					outputData += ((rawData & dataMask) >> bit) << channel; // Fixed
 				}
-				xil_printf("\r\n");
 				XGpio_DiscreteWrite(&gpio, 1, outputData);
 				usleep(100000);
 			}
