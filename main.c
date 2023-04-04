@@ -57,7 +57,7 @@ void sendChannelData(u8 channelData[], u32 numberOfChannels, u32 samplesPerChann
 				}
 				XGpio_DiscreteWrite(&gpio, 1, outputData);
 				usleep(CLOCK_DELAY_MICROSECONDS);
-				outputData |= 1 | ((((!byte) + bit) >> 3) << 1); // Clock and Latch signals
+				outputData |= 1 | (((!byte) + bit) >> 2); // Clock and Latch signals
 				XGpio_DiscreteWrite(&gpio, 1, outputData);
 				usleep(CLOCK_DELAY_MICROSECONDS);
 			}
